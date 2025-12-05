@@ -19,10 +19,9 @@ repositories {
 }
 
 dependencies {
-    // Boot
+    // Core
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
     developmentOnly 'org.springframework.boot:spring-boot-devtools:4.0.0'
 
     // Annotations
@@ -35,6 +34,7 @@ dependencies {
     runtimeOnly 'org.postgresql:postgresql'
 
     // Testing
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 }
 
