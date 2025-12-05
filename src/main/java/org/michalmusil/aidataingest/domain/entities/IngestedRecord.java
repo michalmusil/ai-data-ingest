@@ -32,7 +32,7 @@ public class IngestedRecord {
             mappedBy = "record",
             cascade = CascadeType.ALL,
             orphanRemoval = true,
-            fetch = FetchType.LAZY
+            fetch = FetchType.EAGER
     )
     private List<RecordValue> values = new ArrayList<>();
 
